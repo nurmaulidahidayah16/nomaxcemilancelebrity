@@ -1,0 +1,160 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTAINER UTAMA */
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.container-navbar {
+    background-color: #FFFFFF;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+    padding: 15px;
+}
+
+.li-navbar {
+    padding: 15px 20px;
+    font-size: 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.li-navbar:hover {
+    background-color: pink;
+}
+
+.a-navbar {
+    text-decoration: none;
+    color: 3A3A3A;
+    font-weight: bold;
+}
+
+/* CONTENT */
+.container-content {
+    background-color: #b6e6e6;
+    width: 100%;
+    min-height: 70vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* KOTAK CONTENT */
+.a-content {
+    background-color: #fafeca;
+    color: #2F2F2F;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    width: 620px;
+    max-width: 100%;
+    min-height: 380px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgb(72, 72, 41);
+
+    transition: transform 0.3s ease;
+}
+
+.a-content:hover {
+    transform: scale(1.03);
+}
+
+/* GAMBAR CONTENT */
+.img-content {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* FOOTER */
+.container-footer {
+    background-color: #00737A;
+    width: 100%;
+    min-height: 120px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h1-footer {
+    font-size: 25px;
+    color: white;
+}
+
+/* RESPONSIVE UNTUK HP */
+@media screen and (max-width: 768px) {
+
+    .container-navbar {
+        min-height: 80px;
+    }
+
+    .li-navbar {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container-content {
+        min-height: 60vh;
+        padding: 25px 15px;
+    }
+
+    .a-content {
+        width: 100%;
+        min-height: 300px;
+        font-size: 16px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .img-content {
+        width: 70%;
+    }
+
+    .container-footer {
+        min-height: 100px;
+    }
+
+    .h1-footer {
+        font-size: 22px;
+    }
+}
